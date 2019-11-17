@@ -15,14 +15,13 @@ public class AboutDefaultMethods {
                 return new StringBuilder(s).reverse().toString();
             }
         };
-        String capitalizedReversed = stringUtil.capitalize(
-                stringUtil.reverse("gnirut"));
-        assertEquals(capitalizedReversed, __);
+        String capitalizedReversed = stringUtil.capitalize(stringUtil.reverse("gnirut"));
+        assertEquals(capitalizedReversed, "TURING");
     }
 
     @Koan
     public void interfaceStaticMethod() {
-        assertEquals(StringUtil.enclose("me"), __);
+        assertEquals(StringUtil.enclose("me"), "[me]");
     }
 
     interface StringUtil {
